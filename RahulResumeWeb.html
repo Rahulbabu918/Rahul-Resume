@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rahul Kumar — Resume</title>
+  <style>
+    :root {
+      --bg: #e6f2ff;
+      --ink: #111111;
+      --muted: #555555;
+      --accent: #0b62f5;
+      --line: #e6e6e6;
+    }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.45;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .page {
+      max-width: 840px;
+      margin: 24px auto;
+      padding: 28px 30px;
+      background: #fff;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      border: 1px solid var(--line);
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 16px;
+      border-bottom: 2px solid var(--line);
+      padding-bottom: 14px;
+      margin-bottom: 18px;
+      align-items: center;
+    }
+    .photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--line);
+    }
+    .header-info { display: flex; flex-direction: column; gap: 8px; }
+    .name { font-size: 28px; font-weight: 800; letter-spacing: 0.2px; }
+    .contact {
+      display: flex; flex-wrap: wrap; gap: 14px 24px;
+      color: var(--muted); font-size: 14px;
+    }
+    .contact a { color: inherit; text-decoration: none; border-bottom: 1px dotted #bbb; }
+    .section { margin: 18px 0 8px; }
+    .section h2 {
+      font-size: 16px; letter-spacing: 0.6px; text-transform: uppercase;
+      margin: 0 0 8px 0; color: #333; font-weight: 700;
+    }
+    .text { font-size: 15px; color: #222; }
+    .muted { color: var(--muted); }
+    .list { margin: 0; padding-left: 18px; }
+    .list li { margin: 6px 0; }
+    .skills {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 6px 16px; list-style: none; padding: 0; margin: 0;
+    }
+    .skills li { padding-left: 14px; position: relative; }
+    .skills li::before { content: "•"; position: absolute; left: 0; color: var(--accent); }
+    .role { margin: 14px 0 16px; }
+    .role .title { font-weight: 700; }
+    .role .meta { font-size: 14px; color: var(--muted); }
+    .bullets { margin: 6px 0 0; padding-left: 18px; }
+    .bullets li { margin: 6px 0; }
+    .download-btn {
+      display: inline-block;
+      margin: 20px 0;
+      padding: 10px 18px;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .download-btn:hover {
+      background: #0849b9;
+    }
+    @media (min-width: 720px) {
+      .two-col { display: grid; grid-template-columns: 1.2fr 2fr; gap: 24px; align-items: start; }
+    }
+    @media print {
+      body { background: #fff; }
+      .page { box-shadow: none; border: none; margin: 0; }
+      a { color: #000; text-decoration: none; }
+      .download-btn { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page" role="document" aria-label="Resume of Rahul Kumar">
+    <header>
+      <img src="DSC_0395.jpg" alt="Rahul Kumar Photo" class="photo" />
+      <div class="header-info">
+        <div class="name">Rahul Kumar</div>
+        <div class="contact">
+          <span>Gaya, Bihar 823001</span>
+          <a href="tel:+917463833818" aria-label="Phone">7463833818</a>
+          <a href="mailto:Rahulbabu918@gmail.com">Rahulbabu918@gmail.com</a>
+        </div>
+        <a href="Rahul_Kumar_Resume.pdf" download class="download-btn">⬇ Download PDF</a>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2>Personal Summary</h2>
+      <p class="text">
+        Results-driven Developer with extensive experience at Seer Dynamics, AXImprove Solution Pvt Ltd, and Xilontech Solution Pvt Ltd, specializing in Dynamics 365
+        technical development and report customization. Proven ability to create impactful SSRS and Power BI reports,
+        enhancing decision-making for UK clients. Skilled in load testing and .Net, demonstrating strong analytical and
+        problem-solving capabilities.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Key Skills</h2>
+      <ul class="skills">
+        <li>Dynamics 365 F&amp;O technical</li>
+        <li>AX 2012 technical</li>
+        <li>Source code management</li>
+        <li>Load testing</li>
+        <li>Report customization</li>
+        <li>.Net</li>
+        <li>Power BI</li>
+        <li>SQL</li>
+        <li>Batch Job, Workflow</li>
+        <li>D365 F&amp;O implementation</li>
+        <li>SSRS reporting</li>
+        <li>Batch job creation</li>
+        <li>Professional in API Integration</li>
+        <li>C#</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Education</h2>
+      <div class="two-col">
+        <div class="text">
+          <strong>K.K College of Engineering and Management, Dhanbad</strong><br />
+          B-Tech : CSE (2017–2021)
+        </div>
+        <ul class="list">
+          <li>GPA: 7.68 CGPA</li>
+          <li>Ranked in Top 10% of class</li>
+          <li>Participated in Machine Learning &amp; IoT workshops</li>
+          <li>Capstone: Android chat app using Firebase</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Experience</h2>
+
+      <div class="role">
+        <div class="title"><strong>Developer</strong></div>
+        <div class="meta"><strong>Seer Dynamics, Dubai, UAE · 08/2025 – Present</strong></div>
+        <ul class="bullets">
+          <li>Worked on SSRS report design and customization for multiple business modules.</li>
+          <li>Created and customized D365 F&amp;O forms as per business requirements.</li>
+          <li>Developed and maintained Data Entities for integrations.</li>
+          <li>Hands-on experience with LCS for environment management.</li>
+          <li>Supported deployment processes across UAT and Production environments.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="title">Developer</div>
+        <div class="meta">AXImprove Solution Pvt Ltd, Bangalore, India · 08/2023 – 07/2025</div>
+        <ul class="bullets">
+          <li>Worked on JMeter with D365 F&amp;O for load testing.</li>
+          <li>Worked on RSAT for automation in D365 F&amp;O.</li>
+          <li>Created an Intercompany Clearing Account report and made many report customizations.</li>
+          <li>Worked for UK-based clients, OMSC for implementation D365.</li>
+          <li>Created and customized many SSRS reports.</li>
+          <li>Data entity and OData services.</li>
+          <li>Experience on SQL Server for testing SQL queries to be implemented on X++.</li>
+          <li>Created about 10+ paginated reports and Power BI reports for UK clients.</li>
+          <li>Reports like utilization percent per period, serviceable hired per day, AP settlement after deadline, customer, income &amp; expense reports, and more.</li>
+          <li>Worked on D365 attachment features to save reports and uploaded reports to SharePoint.</li>
+          <li>Worked on model separation, BP error fixes and suppression.</li>
+          <li>Experienced on LCS and DevOps during RSAT implementation; Agile/Scrum for deployments.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="title">Associate System Engineer</div>
+        <div class="meta">Xilontech Solution Pvt Ltd, Hyderabad, India · 08/2021 – 07/2023</div>
+        <ul class="bullets">
+          <li>Created sales reports for XTG Global (US design &amp; India design) with GST.</li>
+          <li>Upgraded AX to D365 F&amp;O for ALMotava (Dubai) and added new features.</li>
+          <li>Built a fully functional sales form for a U.S. client; form extensions for changes.</li>
+          <li>Implemented D365 for Robert Bosch.</li>
+          <li>Supported D365 F&amp;O technical projects for Protiviti Global.</li>
+          <li>Support &amp; development for Toyota Material Handling India in HR module (Attendance &amp; Leave) with AmpleTrails API; created new reports for Japanese design and multiple data entities for Power Apps.</li>
+          <li>Created a daily batch job in D365 F&amp;O for attendance data ingestion.</li>
+          <li>Cloud Nine Healthcare: integrated PAN, GSTIN, Aadhar, and Bank Verification; implemented Insurance Details; created services for invoice journal and product receipt from API.</li>
+          <li>Support for LiveSpace in D365 F&amp;O technical.</li>
+          <li>Tasva (Aditya Birla): added features like entries from FTP files, logging, and exporting sales/purchase invoices to Excel.</li>
+          <li>Customized 60+ existing SSRS reports in D365 F&amp;O; extensive batch job creation.</li>
+          <li>Worked on multiple .NET C# projects (DPOS, Excel Uploader, web pages) and created C# APIs for D365 F&amp;O.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="title">Data Science Internship</div>
+        <div class="meta">The Spark Foundation, Remote, India · 11/2020 – 12/2020</div>
+        <ul class="bullets">
+          <li>Conducted shopping analysis using K-Means clustering.</li>
+          <li>Company origin: Singapore.</li>
+          <li>Repo: <a href="https://github.com/Rahulbabu918/Data-Science" target="_blank" rel="noopener">github.com/Rahulbabu918/Data-Science</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Social Accounts</h2>
+      <p class="text">
+        <a href="https://www.linkedin.com/in/rahul-kumar-441614157" target="_blank" rel="noopener">linkedin.com/in/rahul-kumar-441614157</a>,
+        <a href="https://github.com/Rahulbabu918" target="_blank" rel="noopener">github.com/Rahulbabu918</a>
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Languages</h2>
+      <p class="text">Hindi: First Language · English: C2 (Proficient)</p>
+    </section>
+
+    <section class="section">
+      <h2>Disclaimer</h2>
+      <p class="text">
+        I hereby declare that all the statements made in this resume are true, complete and correct to the knowledge.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
